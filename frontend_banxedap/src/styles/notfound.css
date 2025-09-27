@@ -1,0 +1,69 @@
+/* src/pages/NotFound.css */
+
+.notfound-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #ff0066, #8000ff);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+  
+  .notfound {
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .notfound:hover {
+    transform: scale(1.1);
+  }
+  
+  .notfound-code {
+    font-size: 10rem;
+    font-weight: bold;
+    margin: 0;
+    color: #ffffff;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    animation: glitch 1s infinite alternate-reverse;
+  }
+  
+  @keyframes glitch {
+    0% {
+      text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7), -2px -2px 8px rgba(0, 0, 0, 0.5);
+    }
+    100% {
+      text-shadow: -3px -3px 5px rgba(0, 0, 0, 0.7), 2px 2px 8px rgba(0, 0, 0, 0.5);
+    }
+  }
+  
+  .notfound-message {
+    font-size: 2rem;
+    margin-top: 10px;
+    font-weight: 600;
+  }
+  
+  .notfound-description {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    color: #dcdcdc;
+  }
+  
+  .notfound-home-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    color: #fff;
+    background: #8000ff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+  }
+  
+  .notfound-home-link:hover {
+    background: #ff0066;
+  }
+  

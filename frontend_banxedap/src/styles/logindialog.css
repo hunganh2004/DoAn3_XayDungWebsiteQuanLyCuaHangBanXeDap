@@ -1,0 +1,52 @@
+.login-dialog .p-dialog-content {
+    padding: 2rem;
+    background: #fefefe;
+    border-radius: 12px;
+}
+
+.login-dialog .p-field {
+    margin-bottom: 1.5rem;
+}
+
+.login-dialog label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: #333;
+}
+
+.login-dialog input {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.login-dialog input:focus {
+    border-color: #42a5f5;
+    outline: none;
+}
+
+.login-dialog .p-button {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 8px;
+}
+
+.login-dialog .p-mt-2 {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.login-dialog .p-mt-2 span {
+    color: #007bff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.login-dialog .p-mt-2 span:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}

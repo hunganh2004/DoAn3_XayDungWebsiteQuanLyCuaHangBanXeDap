@@ -1,0 +1,148 @@
+/* --- Header mặc định cho màn hình lớn --- */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    flex-wrap: nowrap;
+    background-color: #76b2e1;
+}
+
+.header-left {
+    flex: 1;
+}
+
+.header-logo {
+    height: 50px;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.header-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav-item {
+    cursor: pointer;
+    font-weight: 500;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.nav-item:hover {
+    color: #007ad9;
+}
+
+.header-right {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.header-search input {
+    width: 250px;
+}
+
+/* Tăng khoảng cách icon bên trái */
+.header-search .pi-search {
+    left: 0.75rem;
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Tạo khoảng cách giữa icon và chữ */
+.header-search .p-inputtext {
+    padding-left: 2rem !important;  /* hoặc 2.25rem nếu cần rộng hơn */
+}
+
+.header-cart {
+    position: relative;
+}
+
+.cart-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transform: translate(50%, -50%);
+    background: red;
+    color: white;
+}
+
+.header-user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.user-name {
+    font-weight: 500;
+    color: #333;
+}
+
+/**/
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .user-info:hover {
+    opacity: 0.9;
+  }
+  
+  .user-name {
+    font-weight: bold;
+    color: #333;
+  }
+  
+
+
+/* --- Responsive cho màn hình nhỏ hơn 768px --- */
+@media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1rem;
+    }
+
+    .header-left, .header-center, .header-right {
+        flex: unset;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .header-center {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .header-search input {
+        width: 100%;
+    }
+
+    .header-right {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .header-cart {
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,329 @@
+
+/* Bố cục chính */
+.admin-layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #cbdde9;
+}
+  /* Nội dung chính */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+  /* Header */
+.header {
+  background: linear-gradient(135deg,#305d89,#043250);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.header .showSidebar {
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.p-panelmenu-header-link, .p-menuitem-link {
+  color: black;
+}
+  /* Nội dung trang */
+.page-content {
+  flex: 1;
+  padding: 20px;
+  overflow: auto;
+}
+  /* Footer */
+.footer {
+  background: linear-gradient(135deg,#2c3e50,#3498db);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+}
+/* Căn giữa form đăng nhập */
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #cc78f0, #78abe6);
+  gap:20px ;
+}
+.login-container {
+  background-color: #dfadf4;
+  border: 3px solid transparent;
+  border-image: linear-gradient( to right , rgb(47, 57, 255) 40%, transparent , transparent, red 60%) 1;
+  padding: 20px;
+  min-width: 324px;
+}
+.login-container .avatar {
+  text-align: center;
+  font-size: 20px;
+  font-weight:lighter;
+}
+.login-container .avatar img {
+  border: 1px solid #9c16d5;
+  border-radius: 50%;
+}
+.login-container .input {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.login-container .remember {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.login-container .remember label {
+  margin-left: 10px;
+}
+.login-container .remember a {
+  text-align: center;
+  color: #1c75db;
+}
+.login-container .remember a:hover {
+  text-decoration: underline;
+}
+.login .submit {
+  display: block;
+  margin: 0 auto;
+}
+/*Bảng dữ liệu */
+/* Tổng quan */
+.table-container{
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+}
+/* Bảng */
+.table-container .custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  color: black;
+  font-size: 20px;
+}
+/* PrimeReact Table Styling */
+.table-container .p-datatable-table {
+  width: 100%;
+}
+.table-container .p-datatable-header {
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+}
+/* Dòng chẵn màu khác */
+.table-container .p-datatable-tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+/* Hiệu ứng hover */
+.table-container .p-datatable-tbody tr:hover {
+  background-color: #ddd;
+}
+.table-container .p-datatable {
+  min-width: 100px; /* Đảm bảo nội dung không bị bóp lại */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.p-datatable .p-datatable-thead > tr > th {
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+}
+.p-datatable .p-datatable-tbody > tr > td {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+}
+.table-container .product-image {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+/* Nút chỉnh sửa và xóa */
+.table-container .edit-btn, .table-container .delete-btn {
+  border: none;
+  cursor: pointer;
+  margin: 2px;
+  border-radius: 5px;
+}
+.table-container .edit-btn {
+  background-color: #f0d878;
+  color: white;
+}
+.table-container .delete-btn {
+  background-color: #f27e71;
+  color: white;
+}
+.table-container .edit-btn:hover {
+  background-color: #d4ac0d;
+}
+.table-container .delete-btn:hover {
+  background-color: #c0392b;
+}
+/* Nút thêm mới */
+.table-container .btn-add {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 20%;
+  margin-right: auto;
+  font-size: 16px;
+}
+/* Thanh tìm kiếm và nút thêm mới */
+.table-container .top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+/* Container bọc ô tìm kiếm */
+.table-container .search-container {
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+/* Nút tìm kiếm */
+.table-container .btn-search {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007bff; /* Xanh dương thay vì xanh lá */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px 0 0 20px; /* Chỉ bo tròn góc trái */
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+/* Điều chỉnh icon */
+.table-container .btn-search i {
+  font-size: 18px;
+}
+/* Ô tìm kiếm */
+.table-container .search-input {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  padding: 10px;
+}
+/* Ô tìm kiếm khi focus */
+.table-container .search-input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+/* Phân trang */
+.pagination {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.pagination button {
+  width: 20%;
+  font-size: 16px;
+  font-weight: bold;
+}
+.pagination button {
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 7px;
+}
+.pagination button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+.pagination .currentPage p{
+  display: inline;
+}
+.pagination .currentPage {
+  text-align: center;
+}
+.pagination .pageSize {
+  width: 40px;
+  padding: 5px;
+  margin-left: 10px;
+  text-align: center;
+}
+/*Form input khi sửa*/
+/* .form-container hiển thị giữa màn hình */
+.form-container {
+  width: 50vw;
+  border-radius: 8px;
+  background: #fff;
+}
+.form-container form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* .form-container input */
+.form-container label {
+  display: block;
+  margin: 5px;
+  font-weight: bold;
+  width: 40%;
+  text-align: left;
+}
+.form-container input {
+  width: 100%;
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 50%;
+  color: black;
+}
+.form-container input:disabled {
+  background-color: #ccc;
+}
+/* Nút trong .form-container */
+.form-container form button {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 50%;
+}
+
+/* Nút lưu */
+.form-container button[type='submit'] {
+  background-color: #007bff;
+  color: white;
+}
+/* Nút hủy */
+.form-container button[type='button'] {
+  background-color: #dc3545;
+  color: white;
+}
+.form-container button[type='submit']:hover {
+  background-color: darkblue;
+  color: white;
+}
+/* Nút hủy */
+.form-container button[type='button']:hover {
+  background-color: darkred;
+  color: white;
+}

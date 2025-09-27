@@ -1,0 +1,134 @@
+.product-page {
+    padding: 2rem;
+    text-align: center;
+}
+
+.product-page h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 sản phẩm mỗi hàng */
+    gap: 1.5rem;
+}
+
+.product-card {
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 1rem;
+}
+
+.product-card h3 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    height: 2.5em;
+    line-height: 1.2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.view-button {
+    margin-top: auto;
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.product-card h3 {
+    color: #e91e63;
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+.product-detail {
+    text-align: center;
+}
+.product-detail-image {
+    width: 100%;
+    max-height: 250px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.product-detail h3 {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+}
+.product-detail h4 {
+    font-size: 1.4rem;
+    color: #2196f3;
+}
+.pagination-buttons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.pagination-buttons .p-button {
+    min-width: 120px;
+}
+.current-page-label {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.product-info {
+    text-align: left;
+    margin-top: 1rem;
+    padding: 0 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-page h2 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,125 @@
+.checkout-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+    background-color: #f3f3f3;  /* Thêm nền nhẹ cho trang */
+}
+
+.checkout-form,
+.checkout-summary {
+    flex: 1 1 300px;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Thêm bóng mờ nhẹ */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển động nhẹ khi hover */
+}
+
+.checkout-form:hover,
+.checkout-summary:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Hiệu ứng hover */
+}
+
+.checkout-form input,
+.checkout-form textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.checkout-form input:focus,
+.checkout-form textarea:focus {
+    border-color: #56ccf2;  /* Màu xanh nhạt khi focus */
+    outline: none;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 0.5rem;
+}
+
+.summary-item p {
+    margin: 0;
+    font-size: 1rem;
+    width: 50%;
+    text-align: left;
+}
+
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;
+}
+
+
+
+.checkout-summary h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.checkout-form h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.checkout-summary p {
+    font-size: 1rem;
+    color: #666;
+}
+
+button.p-button-success {
+    padding: 0.75rem 1.5rem;
+    background-color: #56ccf2;
+    border-color: #56ccf2;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+button.p-button-success:hover {
+    background-color: #45b7e3;
+    border-color: #45b7e3;
+}
+
+/* */
+
+
+/* .summary-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+} */
+
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd; /* Thêm đường viền dưới cho tổng tiền */
+}
+
+.summary-total p {
+    margin: 0;
+}
+.summary-total div {
+    font-size: 1.2rem;
+    color: #56ccf2;  /* Màu cho tổng tiền */
+}

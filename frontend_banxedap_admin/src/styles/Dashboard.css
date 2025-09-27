@@ -1,0 +1,48 @@
+
+/* Container chính */ 
+.dashboard-container {
+    padding: 20px;
+}
+
+  /* Khu vực thống kê */
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}    
+  /* Thẻ thống kê */
+.stat-card {
+    padding: 15px;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}    
+  /* Nội dung thống kê */
+.stat-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}    
+  /* Icon */
+.stat-icon {
+    font-size: 30px;
+    color: blue;
+}    
+  /* Tiêu đề */
+.stat-title {
+    font-size: 18px;
+    font-weight: bold;
+}    
+  /* Giá trị */
+.stat-value {
+    font-size: 22px;
+    color: green;
+}    
+  /* Biểu đồ */
+.chart-panel {
+    margin-top: 20px;
+    padding: 15px;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}    
